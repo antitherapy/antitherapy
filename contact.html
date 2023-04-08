@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Antitherapy - Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    #contact {
+      padding: 0px 0;
+      display: flex;
+      margin-right: 1000px;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    form {
+      width: 100%;
+      max-width: 500px;
+      padding: 30px;
+      margin-top:20px;
+      background-color: #191817;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 18px;
+
+    }
+
+    input[type="text"],
+	input[type="email"],
+	textarea {
+  background-color: #6a6a6a;
+}
+
+label, textarea {
+  color: #f0eeed;
+}
+
+    input[type="submit"] {
+      background-color: #666666;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #64251a;
+    }
+
+    textarea {
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+  <img src="/Users/williamdean/Documents/HTML/Images/Headers/contact.png" alt="Contact Logo" class="logo">
+        <img class="fixed-image" src="/Users/williamdean/Documents/HTML/Images/tv.png" alt="Fixed Image">
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="video.html">Film</a></li>
+      <li><a href="audio.html">Audio</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+  <section id="contact">
+
+    <p></p>
+    <p></p>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <footer>
+  <p>&copy; 2023 Antitherapy</p>
+</footer>
+
+</body>
+</html>
