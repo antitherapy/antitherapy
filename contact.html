@@ -75,19 +75,23 @@ label, textarea {
     </ul>
   </nav>
 </div>
-  <section id="contact">
+<section id="contact">
+    <p></p>
+    <p></p>
+    <form action="contact.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-  <form method="post" action="contact.php">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-  <button type="submit" name="submit">Send</button>
-</form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-  </section>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+</section>
+
 
   <footer>
   <p>&copy; 2023 Antitherapy</p>
