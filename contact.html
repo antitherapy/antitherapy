@@ -62,23 +62,34 @@ label, textarea {
   </style>
 </head>
 <body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
   <div class="header">
-  <img src="Images/Headers/contact.png" alt="Contact Logo" class="logo">
-        <img class="fixed-image" src="Images/tv.png" alt="Fixed Image">
-  <nav>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="video.html">Film</a></li>
-      <li><a href="audio.html">Audio</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <img src="/Images/Headers/contact.png" alt="contact Logo" class="logo">
+    <img class="fixed-image" src="/Images/tv.png" alt="Fixed Image">
+    <div class="topnav" id="myTopnav">
+      
+  <a href="home.html" >Home</a>
+  <a href="video.html">Film</a>
+  <a href="audio.html">Audio</a>
+  <a href="shop.html">Shop</a>
+  <a href="contact.html"class="active">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-<section id="contact">
-    <p></p>
-    <p></p>
-    <form action="contact.php" method="post">
+
+  </div>
+
+
+  <section id="contact">
+
+  	    <p>Get in touch</p>
+
+    <form action="#" method="post">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
 
@@ -90,8 +101,7 @@ label, textarea {
 
       <input type="submit" value="Send">
     </form>
-</section>
-
+  </section>
 
   <footer>
   <p>&copy; 2023 Antitherapy</p>
