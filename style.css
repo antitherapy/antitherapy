@@ -8,9 +8,164 @@ body {
   position: relative;
 }
 
+
+
+/*Basic structure of slider*/
+.container{
+    width: 30%;
+    position: absolute;
+    transform: translate(0%,10%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 0px solid black;
+    border-radius: 0px;
+
+}
+
+/*Area of images*/
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+img{
+    width: 100%;
+}
+/*Animation activated by keyframes*/
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+
+
+
+
+
+
+
+
+/*NAVBAR
+
+/* Style the links inside the navigation bar */
+.topnav a {
+ 
+
+  color: black;
+  text-align:right;
+list-style: none;
+  position: relative;
+
+
+  justify-content: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+    z-index: 2;
+}
+
+#nav ul li {
+	display: inline;
+
+margin: 0 10px 0 10px;
+float: float;
+
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #64251a;
+
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+
+  color: white;
+
+ background-color: #20717f;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+
 /* FIxed background image */
 .fixed-image {
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 0;
   left: 0;
   z-index: -1;
@@ -28,35 +183,7 @@ body {
   padding: 10px 20px;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  position: relative;
-  z-index: 2;
-  margin-bottom: 0;
-  margin-right: 20px;
-}
 
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #64251a;
-  background-color: #20717f;
-}
 
 .text-container {
   width: 50%;
